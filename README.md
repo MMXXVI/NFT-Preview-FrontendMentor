@@ -1,4 +1,4 @@
-﻿# NFT Preview - FrontendMentor
+﻿# NFT Preview Card- Frontend Mentor
 
 [Challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
