@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap');
+
+:root {
+    --clr-primary-soft-blue: hsl(215, 51%, 70%);
+    --clr-primary-white: hsl(0, 0%, 100%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+    --clr-main-bg-blue: hsl(217, 54%, 11%);
+    --clr-card-blue: hsl(216, 50%, 16%);
+    --clr-line-blue: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+    box-sizing: border-box;
+    color: var(--clr-primary-white);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-main-bg-blue);
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--clr-card-blue);
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.411);
+}
+
+.nft {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url(assets/images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nft:hover > *{
+    display: flex;
+    border-radius: 5px;
+    background-color: hsla(178, 100%, 50%, 0.534);
+}
+
+.nft-view{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+    
+
+.title {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.description {
+    width: 250px;
+    font-weight: 200;
+    padding-top: 15px;
+    line-height: 1.5rem;
+}
+
+.price-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    color: var(--clr-primary-cyan);
+}
+
+.price {
+    color: var(--clr-primary-cyan);
+    font-size: 14px;
+}
+
+.price-view img,
+.author-view img {
+    margin-right: 5px;
+}
+
+.price p {
+    font-weight: 600;
+    color: var(--clr-primary-cyan);
+}
+
+.author-view {
+    border-top: 2px solid rgba(255, 255, 255, 0.068);
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.author-view img {
+    margin-right: 10px;
+    border: .5px solid white;
+    border-radius: 100px;
+    height: 30px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: var(--clr-primary-cyan);
+}
+
+.days-left {
+    font-weight: 200;
+}
